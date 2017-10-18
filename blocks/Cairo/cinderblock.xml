@@ -4,7 +4,7 @@
 	name="Cairo"
 	id="org.libcinder.cairo"
 	author="Cinder Project"
-	summary="Cairo support for Mac OS X and Windows."
+	summary="Cairo support for Mac OS X and Windows. Dupe!"
 	>
 	<supports os="msw" />
 	<supports os="macosx" />
@@ -20,6 +20,9 @@
 	<platform os="msw">
 		<staticLibrary>lib/msw/x86/cairo-static.lib</staticLibrary>
 		<staticLibrary>lib/msw/x86/pixman-1.lib</staticLibrary>
+	<!-- FORCING TO 32 BIT -->
+		<!-- <staticLibrary>lib/msw/x64/cairo-static.lib</staticLibrary>
+		<staticLibrary>lib/msw/x64/pixman-1.lib</staticLibrary>>-->
 		<staticLibrary absolute="true">libpng.lib</staticLibrary>
 		<includePath>include/msw</includePath>	
 	</platform>
